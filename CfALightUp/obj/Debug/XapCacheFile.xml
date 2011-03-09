@@ -1,0 +1,13 @@
+﻿<xapCache source="C:\github\DevSummitAGSSilverLight\CfALightUp\Bin\Debug\CfALightUp.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="3/7/2011 11:26:17 PM">
+  <file source="C:\github\DevSummitAGSSilverLight\CfALightUp\obj\Debug\CfALightUp.dll" archivePath="CfALightUp.dll" lastWriteTime="3/7/2011 11:26:12 PM" />
+  <file source="C:\Program Files (x86)\ESRI SDKs\Silverlight\v2.1\ESRI.ArcGIS.Client.dll" archivePath="ESRI.ArcGIS.Client.dll" lastWriteTime="11/29/2010 5:54:54 PM" />
+  <file source="C:\Program Files (x86)\ESRI SDKs\Silverlight\v2.1\ESRI.ArcGIS.Client.Toolkit.dll" archivePath="ESRI.ArcGIS.Client.Toolkit.dll" lastWriteTime="11/29/2010 5:54:54 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v4.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="5/25/2010 6:59:20 PM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v4.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="5/25/2010 6:59:20 PM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="C:\github\DevSummitAGSSilverLight\CfALightUp\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/7/2011 11:26:17 PM" />
+</xapCache>
