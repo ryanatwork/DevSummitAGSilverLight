@@ -15,6 +15,8 @@
     <Grid x:Name="LayoutRoot">
         <Grid.Resources>
             <esri:SimpleFillSymbol x:Key="DefaultFillSymbol" Fill="#01FFFFFF" BorderBrush="#88000000" BorderThickness="2" />
+            <esri:PictureMarkerSymbol x:Key="DefaultMarkerSymbol" 
+                OffsetX="0" OffsetY="31" Source="http://help.arcgis.com/en/webapi/silverlight/samples/Assets/images/flag-yellow-32x32.png" />
         </Grid.Resources>
 
         <!-- Map Control -->
@@ -30,10 +32,7 @@
             </i:Interaction.Triggers>
             <esri:ArcGISTiledMapServiceLayer ID="StreetMapLayer" 
                     Url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" />
-            <!--<esri:ArcGISImageServiceLayer ID="SanFranciscoImageLayer"
-					  Url="http://serverapps.esri.com/ArcGIS/rest/services/SamplesNET/SanFranciscoImage/MapServer" />-->
-           <!--<esri:ArcGISDynamicMapServiceLayer ID="311Layer" 
-                    Url="http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/SanFrancisco/311Incidents/MapServer" />-->
+           
    
             <esri:GraphicsLayer ID="CandidateGraphicsLayer">
                 <esri:GraphicsLayer.MapTip>
@@ -179,43 +178,44 @@
         <!-- StackPanel containing the Base Map Switcher and the Application Toolbar -->
         <StackPanel Orientation="Horizontal" 
                     HorizontalAlignment="Right" Margin="0,5,5,0" VerticalAlignment="Top" >
+           
             <!-- Base Map Switcher -->
-			<!--<Border x:Name="BaseMapSwitcher"  Style="{StaticResource CommonBorder}"  VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5">
-            
-				<StackPanel Orientation="Horizontal" Margin="5">
-					<RadioButton Content="Streets" IsChecked="True"
+            <Border x:Name="BaseMapSwitcher"  Style="{StaticResource CommonBorder}"  VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <RadioButton Content="Streets" IsChecked="True"
 							ToolTipService.ToolTip="Worldwide Street Map"
 							GroupName="BaseLayer"
-							Margin="5,0,0,0" Foreground="White" FontSize="11" Checked="RadioButton_Checked">
-						<i:Interaction.Triggers>
-							<i:EventTrigger EventName="Checked">
-								<actions:SetLayerUrlAction TargetName="Map" LayerID="BaseLayer" Url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>
-							</i:EventTrigger>
-						</i:Interaction.Triggers>
-					</RadioButton>
-					<RadioButton Content="Topo"
+							Margin="5,0,0,0" Foreground="White" FontSize="11" >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <actions:SetLayerUrlAction TargetName="Map" LayerID="BaseLayer" Url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </RadioButton>
+                    <RadioButton Content="Topo"
 							GroupName="BaseLayer"
 							ToolTipService.ToolTip="United States Topographic Map"
 							Margin="5,0,0,0" Foreground="White" FontSize="11" >
-						<i:Interaction.Triggers>
-							<i:EventTrigger EventName="Checked">
-								<actions:SetLayerUrlAction TargetName="Map" LayerID="BaseLayer" Url="http://services.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer"/>
-							</i:EventTrigger>
-						</i:Interaction.Triggers>
-					</RadioButton>
-					<RadioButton Content="Imagery"
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <actions:SetLayerUrlAction TargetName="Map" LayerID="BaseLayer" Url="http://services.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </RadioButton>
+                    <RadioButton Content="Imagery"
 							ToolTipService.ToolTip="Worldwide Satellite Imagery Map"
 							GroupName="BaseLayer"
 							Margin="5,0,0,0" Foreground="White" FontSize="11" >
-						<i:Interaction.Triggers>
-							<i:EventTrigger EventName="Checked">
-								<actions:SetLayerUrlAction TargetName="Map" LayerID="BaseLayer" Url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"/>
-							</i:EventTrigger>
-						</i:Interaction.Triggers>
-					</RadioButton>
-				</StackPanel>
-			</Border>
-           -->
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <actions:SetLayerUrlAction TargetName="Map" LayerID="BaseLayer" Url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </RadioButton>
+                </StackPanel>
+            </Border>
+
+
             <!-- Toolbar -->
             <Grid Margin="5">
                 <userControls:CollapsiblePanel x:Name="MainToolbar" IsExpanded="True" 

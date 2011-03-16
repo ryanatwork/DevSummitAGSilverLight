@@ -65,12 +65,7 @@ namespace CfALightUp
             MapTip.GraphicsLayer = graphicsLayer;
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            //ArcGISTiledMapServiceLayer arcgisLayer = Map.Layers["AGOLayer"] as ArcGISTiledMapServiceLayer;
-            //arcgisLayer.Url = ((RadioButton)sender).Tag as string;
-
-        }
+       
 
         void Layers_LayersInitialized(object sender, EventArgs args)
         {
